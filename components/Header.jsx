@@ -1,8 +1,15 @@
-import { BadgeCheckIcon, CollectionIcon, HomeIcon, LightningBoltIcon, SearchIcon, UserIcon } from "@heroicons/react/outline";
+import {
+  BadgeCheckIcon,
+  CollectionIcon,
+  HomeIcon,
+  LightningBoltIcon,
+  SearchIcon,
+  UserIcon,
+} from "@heroicons/react/outline";
 import Image from "next/image";
 import HeaderItem from "./HeaderItem";
 
-const Header = () => {
+function Header() {
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
       <div className="flex flex-grow justify-evenly max-w-2xl">
@@ -21,6 +28,6 @@ const Header = () => {
       />
     </header>
   );
-};
+}
 
 export default Header;
